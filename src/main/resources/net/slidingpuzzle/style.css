@@ -1,0 +1,8 @@
+#container
+{
+    -fx-border-width: 10px;
+    -fx-border-color: red;
+    -fx-border-style: solid;
+    -fx-border-radius: 1px;
+    -fx-background-radius: 10px;
+}
