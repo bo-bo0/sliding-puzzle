@@ -49,7 +49,7 @@ public abstract class MainGameManager
         currentFreeSquare = new Coords(pieces.get(ran).getLayoutX(), pieces.get(ran).getLayoutY());
         pieces.remove(pieces.get(ran));
     }
-    private static void setPiecesNumbers(int[] arr ,Difficulty difficulty) throws NullPointerException
+    private static void setPiecesNumbers(int[] arr, Difficulty difficulty) throws NullPointerException
     {
         Objects.requireNonNull(difficulty);
 
