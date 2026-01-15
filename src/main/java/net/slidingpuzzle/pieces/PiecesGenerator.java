@@ -27,5 +27,8 @@ public abstract class PiecesGenerator
             int i = count + 1;
             Delay.executeAfter(0.15f, () -> generatePiece(piecesCount, i));
         }
+
+        else
+        { MainGameManager.playerCanInput = true; }
     }
 }

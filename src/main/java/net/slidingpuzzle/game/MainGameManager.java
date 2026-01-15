@@ -7,19 +7,26 @@ import net.slidingpuzzle.pieces.Coords;
 import net.slidingpuzzle.pieces.PiecesGenerator;
 import net.slidingpuzzle.utils.NodeHelper;
 
-import java.util.ArrayList;
-import java.util.Objects;
-import java.util.Random;
+import java.util.*;
 import java.util.concurrent.ThreadLocalRandom;
 
 public abstract class MainGameManager
 {
+    public static final float moveToFreeTime = 0.5f;
+
     public static ArrayList<Node> pieces;
     public static AbstractPiece[] abstractPieces = new AbstractPiece[15];
+    public static boolean playerCanInput = false;
+    public static Coords currentFreeSquare;
 
-    public static void init()
+
+    public static void awake()
     {
         makeEverythingInvisible();
+    }
+
+    public static void init(Difficulty difficulty)
+    {
         removeRandomPiece();
         PiecesGenerator.generate();
 
@@ -28,7 +35,7 @@ public abstract class MainGameManager
         for (int i = 0; i < 15; i++)
         { numbers[i] = i + 1; }
 
-        setPiecesNumbers(numbers, Difficulty.HARD);
+        setPiecesNumbers(numbers, difficulty);
     }
     private static void makeEverythingInvisible()
     {
@@ -39,6 +46,7 @@ public abstract class MainGameManager
     {
         var ran = new Random().nextInt(pieces.size());
         NodeHelper.removeNode(pieces.get(ran));
+        currentFreeSquare = new Coords(pieces.get(ran).getLayoutX(), pieces.get(ran).getLayoutY());
         pieces.remove(pieces.get(ran));
     }
     private static void setPiecesNumbers(int[] arr ,Difficulty difficulty) throws NullPointerException
@@ -53,7 +61,9 @@ public abstract class MainGameManager
         };
 
         int n = arr.length;
-        if (n < 2) return;
+
+        if (n < 2)
+        { return; }
 
         double[] intensities = {0.20, 0.55, 0.90};
         int k = (int) Math.round(n * intensities[intDiff - 1]);
@@ -101,8 +111,7 @@ public abstract class MainGameManager
         for (int i = 0; i < abstractPieces.length; i++)
         {
             var currentPane = (Pane)pieces.get(i);
-            var currentPanePosition = new Coords(currentPane.getLayoutX(), currentPane.getLayoutY());
-            abstractPieces[i] = new AbstractPiece(currentPanePosition, arr[i], currentPane);
+            abstractPieces[i] = new AbstractPiece(arr[i], currentPane);
         }
     }
 }

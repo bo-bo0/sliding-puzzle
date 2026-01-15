@@ -5,9 +5,7 @@ import javafx.scene.layout.Pane;
 
 public final class AbstractPiece
 {
-    private final Pane pane;
 
-    private Coords position;
     public int value;
 
     private void setValue(int value) throws IllegalArgumentException
@@ -18,11 +16,9 @@ public final class AbstractPiece
         this.value = value;
     }
 
-    public AbstractPiece(Coords position, int value, Pane pane)
+    public AbstractPiece(int value, Pane pane)
     {
-        setPosition(position);
         setValue(value);
-        this.pane = pane;
 
         var children = pane.getChildren();
         for (var child : children)
@@ -35,15 +31,4 @@ public final class AbstractPiece
         }
     }
 
-    public int getValue()
-    { return value; }
-
-    public Coords getPosition()
-    { return position; }
-
-    public void setPosition(Coords position)
-    { this.position = position; }
-
-    public Pane getPane()
-    { return pane; }
 }
