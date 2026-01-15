@@ -19,7 +19,6 @@ public abstract class MainGameManager
     public static boolean playerCanInput = false;
     public static Coords currentFreeSquare;
 
-
     public static void awake()
     {
         makeEverythingInvisible();
