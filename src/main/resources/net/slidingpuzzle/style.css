@@ -82,7 +82,7 @@
 
 .combo-box
 {
-    -fx-background-color: linear-gradient(to bottom right, #f0f0f0, #e0e0e0); /* sfondo chiaro e soft */
+    -fx-background-color: linear-gradient(to bottom right, #f0f0f0, #e0e0e0);
     -fx-background-radius: 12;
     -fx-border-radius: 12;
     -fx-border-color: #cccccc;
@@ -111,7 +111,7 @@
 
 .combo-box .list-cell:hover
 {
-    -fx-background-color: #4CAF50; /* verde simile al button di Start */
+    -fx-background-color: #4CAF50;
     -fx-text-fill: white;
     -fx-cursor: hand;
 }
