@@ -1,9 +1,141 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
 
-<AnchorPane prefHeight="779.0" prefWidth="1224.0" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1">
+<AnchorPane prefHeight="779.0" prefWidth="1224.0" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="net.slidingpuzzle.events.MainController">
    <children>
-      <Pane id="container" layoutX="227.0" layoutY="15.0" prefHeight="750.0" prefWidth="800.0" style="-fx-background-color: blue;" />
+      <Pane id="container" layoutX="109.0" layoutY="7.0" prefHeight="763.0" prefWidth="817.0" style="-fx-background-color: blue;" AnchorPane.bottomAnchor="9.0" AnchorPane.leftAnchor="109.0" AnchorPane.rightAnchor="298.0" AnchorPane.topAnchor="7.0">
+         <children>
+            <Pane layoutX="10.0" layoutY="10.0" prefHeight="187.5" prefWidth="200.0" style="-fx-border-color: green; -fx-background-color: red;" styleClass="piece">
+               <children>
+                  <Label layoutX="3.0" layoutY="-2.0" prefHeight="181.0" prefWidth="194.0" styleClass="piece-label" text="0">
+                     <font>
+                        <Font size="77.0" />
+                     </font>
+                  </Label>
+               </children></Pane>
+            <Pane fx:id="test1" layoutX="209.0" layoutY="10.0" prefHeight="187.5" prefWidth="200.0" style="-fx-border-color: green; -fx-background-color: red;" styleClass="piece">
+               <children>
+                  <Label layoutX="3.0" layoutY="3.0" prefHeight="181.0" prefWidth="194.0" styleClass="piece-label" text="0">
+                     <font>
+                        <Font size="77.0" />
+                     </font>
+                  </Label>
+               </children></Pane>
+            <Pane fx:id="test11" layoutX="408.0" layoutY="10.0" prefHeight="187.5" prefWidth="200.0" style="-fx-border-color: green; -fx-background-color: red;" styleClass="piece">
+               <children>
+                  <Label layoutX="3.0" layoutY="3.0" prefHeight="181.0" prefWidth="194.0" styleClass="piece-label" text="0">
+                     <font>
+                        <Font size="77.0" />
+                     </font>
+                  </Label>
+               </children></Pane>
+            <Pane fx:id="test111" layoutX="607.0" layoutY="10.0" prefHeight="187.5" prefWidth="200.0" style="-fx-border-color: green; -fx-background-color: red;" styleClass="piece">
+               <children>
+                  <Label layoutX="3.0" layoutY="3.0" prefHeight="181.0" prefWidth="194.0" styleClass="piece-label" text="0">
+                     <font>
+                        <Font size="77.0" />
+                     </font>
+                  </Label>
+               </children></Pane>
+            <Pane fx:id="test2" layoutX="10.0" layoutY="196.0" prefHeight="187.5" prefWidth="200.0" style="-fx-border-color: green; -fx-background-color: red;" styleClass="piece">
+               <children>
+                  <Label layoutX="3.0" layoutY="3.0" prefHeight="181.0" prefWidth="194.0" styleClass="piece-label" text="0">
+                     <font>
+                        <Font size="77.0" />
+                     </font>
+                  </Label>
+               </children></Pane>
+            <Pane fx:id="test12" layoutX="209.0" layoutY="196.0" prefHeight="187.5" prefWidth="200.0" style="-fx-border-color: green; -fx-background-color: red;" styleClass="piece">
+               <children>
+                  <Label layoutX="3.0" layoutY="3.0" prefHeight="181.0" prefWidth="194.0" styleClass="piece-label" text="0">
+                     <font>
+                        <Font size="77.0" />
+                     </font>
+                  </Label>
+               </children></Pane>
+            <Pane fx:id="test112" layoutX="408.0" layoutY="196.0" prefHeight="187.5" prefWidth="200.0" style="-fx-border-color: green; -fx-background-color: red;" styleClass="piece">
+               <children>
+                  <Label layoutX="3.0" layoutY="3.0" prefHeight="181.0" prefWidth="194.0" styleClass="piece-label" text="0">
+                     <font>
+                        <Font size="77.0" />
+                     </font>
+                  </Label>
+               </children></Pane>
+            <Pane fx:id="test1111" layoutX="607.0" layoutY="196.0" prefHeight="187.5" prefWidth="200.0" style="-fx-border-color: green; -fx-background-color: red;" styleClass="piece">
+               <children>
+                  <Label layoutX="3.0" layoutY="3.0" prefHeight="181.0" prefWidth="194.0" styleClass="piece-label" text="0">
+                     <font>
+                        <Font size="77.0" />
+                     </font>
+                  </Label>
+               </children></Pane>
+            <Pane fx:id="test3" layoutX="10.0" layoutY="382.0" prefHeight="187.5" prefWidth="200.0" style="-fx-border-color: green; -fx-background-color: red;" styleClass="piece">
+               <children>
+                  <Label layoutX="3.0" layoutY="3.0" prefHeight="181.0" prefWidth="194.0" styleClass="piece-label" text="0">
+                     <font>
+                        <Font size="77.0" />
+                     </font>
+                  </Label>
+               </children></Pane>
+            <Pane fx:id="test13" layoutX="209.0" layoutY="382.0" prefHeight="187.5" prefWidth="200.0" style="-fx-border-color: green; -fx-background-color: red;" styleClass="piece">
+               <children>
+                  <Label layoutX="3.0" layoutY="3.0" prefHeight="181.0" prefWidth="194.0" styleClass="piece-label" text="0">
+                     <font>
+                        <Font size="77.0" />
+                     </font>
+                  </Label>
+               </children></Pane>
+            <Pane fx:id="test113" layoutX="408.0" layoutY="382.0" prefHeight="187.5" prefWidth="200.0" style="-fx-border-color: green; -fx-background-color: red;" styleClass="piece">
+               <children>
+                  <Label layoutX="3.0" layoutY="3.0" prefHeight="181.0" prefWidth="194.0" styleClass="piece-label" text="0">
+                     <font>
+                        <Font size="77.0" />
+                     </font>
+                  </Label>
+               </children></Pane>
+            <Pane fx:id="test1112" layoutX="607.0" layoutY="382.0" prefHeight="187.5" prefWidth="200.0" style="-fx-border-color: green; -fx-background-color: red;" styleClass="piece">
+               <children>
+                  <Label layoutX="3.0" layoutY="3.0" prefHeight="181.0" prefWidth="194.0" styleClass="piece-label" text="0">
+                     <font>
+                        <Font size="77.0" />
+                     </font>
+                  </Label>
+               </children></Pane>
+            <Pane fx:id="test21" layoutX="10.0" layoutY="568.0" prefHeight="187.5" prefWidth="200.0" style="-fx-border-color: green; -fx-background-color: red;" styleClass="piece">
+               <children>
+                  <Label layoutX="3.0" layoutY="3.0" prefHeight="181.0" prefWidth="194.0" styleClass="piece-label" text="0">
+                     <font>
+                        <Font size="77.0" />
+                     </font>
+                  </Label>
+               </children></Pane>
+            <Pane fx:id="test121" layoutX="209.0" layoutY="568.0" prefHeight="187.5" prefWidth="200.0" style="-fx-border-color: green; -fx-background-color: red;" styleClass="piece">
+               <children>
+                  <Label layoutX="3.0" layoutY="3.0" prefHeight="181.0" prefWidth="194.0" styleClass="piece-label" text="0">
+                     <font>
+                        <Font size="77.0" />
+                     </font>
+                  </Label>
+               </children></Pane>
+            <Pane fx:id="test1121" layoutX="408.0" layoutY="568.0" prefHeight="187.5" prefWidth="200.0" style="-fx-border-color: green; -fx-background-color: red;" styleClass="piece">
+               <children>
+                  <Label layoutY="3.0" prefHeight="181.0" prefWidth="194.0" styleClass="piece-label" text="0">
+                     <font>
+                        <Font size="77.0" />
+                     </font>
+                  </Label>
+               </children></Pane>
+            <Pane fx:id="test11111" layoutX="607.0" layoutY="568.0" prefHeight="187.5" prefWidth="200.0" style="-fx-border-color: green; -fx-background-color: red;" styleClass="piece">
+               <children>
+                  <Label layoutX="3.0" layoutY="3.0" prefHeight="181.0" prefWidth="194.0" styleClass="piece-label" text="0">
+                     <font>
+                        <Font size="77.0" />
+                     </font>
+                  </Label>
+               </children></Pane>
+         </children></Pane>
    </children>
 </AnchorPane>
