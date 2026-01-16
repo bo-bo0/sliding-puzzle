@@ -111,6 +111,7 @@ public class MainController implements Initializable
             MainGameManager.playerCanInput = false;
 
             Delay.executeAfter(MainGameManager.moveToFreeTime, () -> MainGameManager.playerCanInput = true);
+            SoundManager.playSound("slide.wav", -30, false);
         }
     }
     public void onMajoranaPressed() throws URISyntaxException, IOException

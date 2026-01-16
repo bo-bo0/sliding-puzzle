@@ -4,6 +4,7 @@ import javafx.scene.layout.Pane;
 import net.slidingpuzzle.events.PieceMover;
 import net.slidingpuzzle.game.MainGameManager;
 import net.slidingpuzzle.utils.Delay;
+import net.slidingpuzzle.utils.SoundManager;
 
 public abstract class PiecesGenerator
 {
@@ -23,6 +24,7 @@ public abstract class PiecesGenerator
             piece.setOpacity(0);
             PieceMover.fade(piece, 1, 0.4f);
             piece.setVisible(true);
+            SoundManager.playSound("slide.wav", -30, false);
 
             int i = count + 1;
             Delay.executeAfter(0.15f, () -> generatePiece(piecesCount, i));
