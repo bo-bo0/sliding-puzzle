@@ -13,12 +13,10 @@ import javafx.stage.Window;
 import net.slidingpuzzle.game.Difficulty;
 import net.slidingpuzzle.game.MainGameManager;
 import net.slidingpuzzle.pieces.Coords;
-import net.slidingpuzzle.utils.ButtonHelper;
-import net.slidingpuzzle.utils.Delay;
-import net.slidingpuzzle.utils.Distance;
-import net.slidingpuzzle.utils.SceneHelper;
+import net.slidingpuzzle.utils.*;
 
 import java.io.IOException;
+import java.net.URISyntaxException;
 import java.net.URL;
 import java.util.ResourceBundle;
 
@@ -114,5 +112,17 @@ public class MainController implements Initializable
 
             Delay.executeAfter(MainGameManager.moveToFreeTime, () -> MainGameManager.playerCanInput = true);
         }
+    }
+    public void onMajoranaPressed() throws URISyntaxException, IOException
+    {
+        Web.browse("https://www.majoranatermoli.edu.it/");
+    }
+    public void onOpenDayPressed() throws URISyntaxException, IOException
+    {
+        Web.browse("https://www.majoranatermoli.edu.it/orientamento/");
+    }
+    public void onNamePressed() throws URISyntaxException, IOException
+    {
+        Web.browse("https://github.com/bo-bo0");
     }
 }

@@ -14,7 +14,7 @@ import java.util.concurrent.ThreadLocalRandom;
 
 public abstract class MainGameManager
 {
-    public static final float moveToFreeTime = 0.5f;
+    public static final float moveToFreeTime = 0.35f;
 
     public static ArrayList<Node> pieces;
     public static AbstractPiece[] abstractPieces = new AbstractPiece[15];

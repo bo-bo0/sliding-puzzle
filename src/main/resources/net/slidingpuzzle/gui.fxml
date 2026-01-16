@@ -139,9 +139,9 @@
          </children></Pane>
       <ComboBox fx:id="comboBox" layoutX="1001.0" layoutY="194.0" onAction="#onComboBoxSelectionChanged" prefWidth="150.0" />
       <Button fx:id="createButton" layoutX="985.0" layoutY="276.0" mnemonicParsing="false" onAction="#onCreateButtonPressed" prefHeight="51.0" prefWidth="185.0" text="CREA PUZZLE" />
-      <Label layoutX="1047.0" layoutY="633.0" prefHeight="25.0" prefWidth="107.0" styleClass="sub" text="Open day 2026" />
-      <Label layoutX="1042.0" layoutY="673.0" prefHeight="17.0" prefWidth="114.0" styleClass="sub" text="Majorana Termoli" />
-      <Label layoutX="1045.0" layoutY="709.0" prefHeight="17.0" prefWidth="107.0" styleClass="sub" text="By Pierluca Perla" />
+      <Label layoutX="1047.0" layoutY="633.0" onMousePressed="#onOpenDayPressed" prefHeight="25.0" prefWidth="107.0" styleClass="sub" text="Open day 2026" />
+      <Label layoutX="1042.0" layoutY="673.0" onMousePressed="#onMajoranaPressed" prefHeight="17.0" prefWidth="114.0" styleClass="sub" text="Majorana Termoli" />
+      <Label layoutX="1045.0" layoutY="709.0" onMousePressed="#onNamePressed" prefHeight="17.0" prefWidth="107.0" styleClass="sub" text="By Pierluca Perla" />
       <Label id="diff" layoutX="1046.0" layoutY="160.0" prefHeight="17.0" prefWidth="84.0" text="Difficoltà" />
       <Button fx:id="resetButton" layoutX="1025.0" layoutY="372.0" mnemonicParsing="false" onAction="#onResetButtonPressed" text="Resetta" />
    </children>
