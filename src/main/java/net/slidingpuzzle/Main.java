@@ -2,6 +2,7 @@ package net.slidingpuzzle;
 
 import javafx.application.Application;
 import javafx.stage.Stage;
+
 import net.slidingpuzzle.game.MainGameManager;
 import net.slidingpuzzle.utils.SceneHelper;
 import net.slidingpuzzle.utils.SoundManager;

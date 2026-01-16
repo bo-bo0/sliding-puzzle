@@ -10,10 +10,16 @@ import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.Pane;
 import javafx.stage.Stage;
 import javafx.stage.Window;
+
 import net.slidingpuzzle.game.Difficulty;
 import net.slidingpuzzle.game.MainGameManager;
 import net.slidingpuzzle.pieces.Coords;
-import net.slidingpuzzle.utils.*;
+import net.slidingpuzzle.utils.ButtonHelper;
+import net.slidingpuzzle.utils.SoundManager;
+import net.slidingpuzzle.utils.Delay;
+import net.slidingpuzzle.utils.SceneHelper;
+import net.slidingpuzzle.utils.Web;
+import net.slidingpuzzle.utils.Distance;
 
 import java.io.IOException;
 import java.net.URISyntaxException;

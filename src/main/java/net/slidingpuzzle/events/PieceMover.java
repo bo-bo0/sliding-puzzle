@@ -1,8 +1,11 @@
 package net.slidingpuzzle.events;
 
-import javafx.animation.*;
+import javafx.animation.KeyFrame;
+import javafx.animation.KeyValue;
+import javafx.animation.Timeline;
 import javafx.scene.layout.Pane;
 import javafx.util.Duration;
+
 import net.slidingpuzzle.pieces.Coords;
 
 public class PieceMover

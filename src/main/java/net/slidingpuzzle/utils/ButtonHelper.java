@@ -10,7 +10,6 @@ public abstract class ButtonHelper
         {
             button.setStyle("-fx-background-color: linear-gradient(to bottom right, #4CAF50, #2E7D32);" +
             " -fx-text-fill: white;");
-
         }
         else
         {
