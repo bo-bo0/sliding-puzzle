@@ -7,6 +7,7 @@ public final class AbstractPiece
 {
 
     public int value;
+    private final Pane pane;
 
     private void setValue(int value) throws IllegalArgumentException
     {
@@ -20,6 +21,8 @@ public final class AbstractPiece
     {
         setValue(value);
 
+        this.pane = pane;
+
         var children = pane.getChildren();
         for (var child : children)
         {
@@ -30,5 +33,6 @@ public final class AbstractPiece
             }
         }
     }
-
+    public Pane getPane()
+    { return pane; }
 }

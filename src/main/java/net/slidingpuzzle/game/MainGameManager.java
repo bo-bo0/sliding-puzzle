@@ -7,7 +7,9 @@ import net.slidingpuzzle.pieces.Coords;
 import net.slidingpuzzle.pieces.PiecesGenerator;
 import net.slidingpuzzle.utils.NodeHelper;
 
-import java.util.*;
+import java.util.ArrayList;
+import java.util.Random;
+import java.util.Objects;
 import java.util.concurrent.ThreadLocalRandom;
 
 public abstract class MainGameManager
@@ -18,6 +20,9 @@ public abstract class MainGameManager
     public static AbstractPiece[] abstractPieces = new AbstractPiece[15];
     public static boolean playerCanInput = false;
     public static Coords currentFreeSquare;
+    public static boolean canGenerate = true;
+    public static boolean canReset = false;
+    public static Difficulty difficulty = Difficulty.MEDIUM;
 
     public static void awake()
     {
